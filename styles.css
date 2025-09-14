@@ -1,0 +1,113 @@
+/**ESTILOS**/
+:root{
+    --bg: #0d021b;
+    --ink: #e5b3c896;
+    --muted: #87175192;
+    --brand: #941515;
+    --surface: #fdd4e8;
+    --radius: 15px;
+    --shadow: 0 16px 40px #470c2c7e;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body {
+    background-image: url("/assets/fondito-snoopy.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #eb5582;
+}
+
+
+.container{
+    width: min(1100px,92vw);
+    margin-inline: auto;
+    padding: 24px;
+}
+
+/**NAVBAR**/
+
+.site{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-block: 25px;
+}
+
+.logo{
+    font-family:"Lobster", sans-serif;
+    font-size: clamp(20px, 2.5vw, 45px);
+    font-weight: 20;
+    letter-spacing: 0.5px;
+}
+
+nav ul{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a{
+    color: var(--ink);
+    text-decoration: none;
+    opacity: 0.8;
+    color: #eb5582;
+}
+
+/*FEATURES*/
+.features{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-block: 24px;
+}
+
+.card{
+    background: var(--surface);
+    opacity: 95%;
+    border: 2px solid var(--ink);
+    padding: 16px;
+    border-radius:var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.icon{
+    font-size: 18px;
+}
+
+.card h3{
+    margin: 8px 0;
+    text-align: center;
+}
+
+.card p{
+    margin: 16px;
+    color: var(--muted);
+}
+
+img{
+    max-width: 100%; 
+    max-height: 100%;
+    border-radius: 16px;
+}
+
+/**FOOTER**/
+
+footer{
+    opacity: 0.45;
+    padding: 16px 0;
+    text-align: center;
+}
